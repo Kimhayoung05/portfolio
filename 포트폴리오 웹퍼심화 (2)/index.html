@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+      
+        <div class="logo"><img src="img/로고.png" alt="로고"></div>
+        <nav class="navbar">
+           <ul class="menu">
+             <li class="menu-item"><a href="#">about</a></li>
+             <li class="menu-item"><a href="#">Portfolio</a></li>
+             <li class="menu-item"><a href="#">value</a></li>
+           </ul>
+        </nav>
+      </header> 
+    
+      <section class="slide">
+        <ul>
+            <li class="s1"><p>푸른 마을에 놀러오세요</p></li>
+            <li class="s2"><p>은파 호수공완이 아주 아름다워요</p></li>
+            <li class="s3"><p>도움정보는 도움마당에서 확인하세요</p></li>
+        </ul>
+    </section>
+
+    <div class="cjdma">
+      <h1>김하영 포트폴리오<br>"모든 디자인은 이야기를 담고, 그 이야기를 시각으로 풀어냅니다.”</h1>
+      <div class="image-container">
+        <img src="img/프로필 이미지.png" alt="프로필 이미지">
+        <div class="overlay">
+          <p>김하영</p>
+          <p>2005년 12월 12일</p>
+          <p>ESFJ</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 스킬소개  -->
+<section class="about">
+  <div class="section-inner">
+    <div class="accordion-content">
+      <div class="focus"></div>
+      <ul class="accordion">
+        <li>
+           <div class="number">A</div>
+           <div class="info">
+             <h2>Qualification</h2>
+             <p>
+               -GTQ그래픽기술자격 2급 2021.08 <br>
+               -GTQ일러스트 2급 2022.01 <br>
+               -GTQ일러스트 1급 2022.07 <br>
+               -컴퓨터그래픽스운용기능사 2023.07 <br>
+             </p>
+           </div>        
+        </li>
+
+        <li>
+         <div class="number">B</div>
+         <div class="info">
+           <h2>Educational background</h2>
+           <p>
+             -인하공업전문대학 디지털마케팅공학과 <br>
+             -뷰티예술고등학교 디자인과 <br>
+           </p>
+         </div>        
+      </li>
+
+      <li>
+       <div class="number">C</div>
+       <div class="info">
+         <h2>Awards and certifications</h2>
+         <p>
+           - 디자인과 전공 동아리 활동 <br>
+           - 굿즈 디자인 및 판매 <br>
+           - 축제 포스터 공모전 수상 <br>
+           - 음악 학원 포스터 기획 및  제작 <br>
+           - 교과서 디자인 국제 공모전 수상 <br>
+         </p>
+       </div>        
+    </li>        
+ </ul>
+ </div>
+</div>
+</section>
+
+<section class="Projects">
+  <h3>Projects</h3>
+  <!--카테고리 필터링 -->
+  <section class="categories">
+    <button onclick="filterProducts('all')">전체</button>
+    <button onclick="filterProducts('beverage')">영상</button>
+    <button onclick="filterProducts('food')">포스터</button>
+ </section>
+
+ 
+  <main class="product-list">
+    <!-- 영상 -->
+    <div class="product-card" data-category="beverage">
+       <video src="img/1.mov" width="1000px" autoplay="" controls="" alt="아메리카노"></video>
+       <div class="product-info">
+        <h2>스톱모션</h2>
+        <p>기여도: 기획 및 제작<br>
+         사용툴: llustrator<br>
+     </div>
+    </div>
+    </div>
+
+    <div class="product-card" data-category="beverage">
+       <video src="img/2.mp4" width="1000px" autoplay="" controls="" alt="카라멜마키아또"></video>
+       <div class="product-info">
+        <h2>브이로그
+        </h2>
+        <p>기여도: 기획 및 제작<br>
+         사용툴: Premiere Pro<br>
+     </div>
+    </div>
+    </div>
+
+    <div class="product-card" data-category="beverage">
+      <video src="img/3.mp4" width="1000px" autoplay="" controls="" alt="카페라떼"></video>
+      <div class="product-info">
+        <h2>숏드라마</h2>
+        <p>기여도: 기획 및 제작<br>
+         사용툴: Premiere Pro<br>
+     </div>
+    </div>
+    </div>
+    <!-- 영상  -->
+
+    <!-- 포스터 -->
+    <div class="product-card" data-category="food">
+       <img src="img/국어.png">
+       <div class="product-info">
+        <h2>교과서표지 디자인</h2>
+        <p>기여도: 기획 및 제작<br>
+         사용툴: llustrator<br>
+     </div>
+    </div>
+
+    <div class="product-card" data-category="food">
+       <img src="img/수학.png">
+       <div class="product-info">
+        <h2>교과서표지 디자인</h2>
+        <p>기여도: 기획 및 제작<br>
+         사용툴: llustrator<br>
+     </div>
+    </div>
+
+    <div class="product-card" data-category="food">
+       <img src="img/동막제 포스터.png">
+    <div class="product-info">
+       <h2>축제포스터</h2>
+       <p>기여도: 기획 및 제작<br>
+        사용툴: llustrator<br>
+    </div>
+    </div>
+
+    <div class="product-card" data-category="food">
+      <img src="img/음악학원포스터.png">
+      <div class="product-info">
+       <h2>음악학원 홍보 포스터</h2>
+       <p>기여도: 기획 및 제작<br>
+        사용툴: llustrator, Photoshop
+    </div>
+   </div>
+
+   <div class="product-card" data-category="food">
+    <img src="img/포스터 수정본.png">
+    <div class="product-info">
+     <h2>버스킹 홍보 포스터</h2>
+     <p>기여도: 기획 및 제작<br>
+      사용툴: llustrator, Photoshop
+  </div>
+ </div>
+
+ <div class="product-card" data-category="food">
+  <img src="img/올영.png">
+  <div class="product-info">
+   <h2>올리브영 프로모션 포스터</h2>
+   <p>기여도: 기획 및 제작<br>
+    사용툴: llustrator<br>
+</div>
+</div>
+
+<div class="card">
+  <div class="product-work">
+    <h4>★ <a>How i work</a> ★</h4>
+    <p>일의 과정도 중요하지만 목표 달성에서 재미를 찾는 편이에요.<br> 
+      문제가 생겨도 그 상황 안에서 일을 진행할 수 있는 방향을 찾습니다.<br>
+      함께 정한 기한은 반드시 지키려고 노력해요.</p>
+</div>
+</div>
+    <!-- 포스터 -->
+    </main>
+</section>
+
+<!-- <section class="work">
+  <h4>★ <a>How i work</a> ★</h4>
+  <p>일의 과정도 중요하지만 목표 달성에서 재미를 찾는 편이에요.<br> 
+    문제가 생겨도 그 상황 안에서 일을 진행할 수 있는 방향을 찾습니다.<br>
+    함께 정한 기한은 반드시 지키려고 노력해요.</p>
+</section> -->
+      
+    <footer>
+       © KIM HA YOUNG PORTFOLIO
+    </footer>
+</body>
+</html>
